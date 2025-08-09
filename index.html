@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+
+    <!-- Meta: descrever o conteúdo de uma página para os mecanismos de busca -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> Responsavel por fazer com que a tela se 
+     ajuste a diversas interfaces -->
+    <title>Deve links</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Div: Uma caixa genérica -->
+    <div id="container">
+        <div id="profile">
+            <img src="./assets/avatar.png" alt="Foto de Myke Brito sorrindo, usando oculos e camisa preta, barba e fundo
+            amarelo">
+            <!-- O atribudo ALT presente dentro da TAG IMG, serve para adicionar uma descrição sobre a foto em questão -->
+             <p>@maykebrito</p>
+        </div>
+
+        <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#">Inscrever-se no LINK</a>
+                <!-- Ao colocar "#" no HREF estamos dizendo que o link não está levando para lugar nenhum -->
+            </li>
+            <li>
+                <a href="#">Baixar meu e-book</a>
+            </li>
+            <li>
+                <a href="#">Ver meu portifólio</a>
+            </li>
+            <li>
+                <a href="https.//rocketseat.com.br/explorer" target="_blank">Conheça o explorer</a>
+            </li>
+            <!-- Ao colocar TARGET="_BLANK" estamos dizendo que ao abrir o link o usuario irá abri-lo em uma outra aba
+             não irá substituir a tela em que está-->
+        </ul>
+        <div id="social-midia">
+            <a href="https://github.com/maykebrito" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://instagram.com/maykebrito" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://youtube.com/maykebrito" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+            <a href="https://linkedin.com/in/maykebrito" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>    
+            </a>
+            
+        </div>
+
+        <footer>
+            Feito com amor pela <a href="https.//rocketseat.com.br">Rocketseat</a>
+        </footer>
+
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Comandos copiados para poder usar os icones do "ionicons" -->
+     <script src="./script.js"></script>
+</body>
+</html>
