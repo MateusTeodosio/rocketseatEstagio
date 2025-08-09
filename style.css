@@ -92,12 +92,19 @@ body * {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+
+    animation: slide-back 0.2s;
 }
 /* O bloco SWITCH está com a  posição relativa, e o BUTTON SWITCH está com a posição ABSOLUTA referente ao RELATIVO do SWITCH */
 
 .light #switch button{
-    right: 0;
-    left: initial;
+    animation: slide-in 0.2s forwards;
+/* FORWARDS: Indica que quando a animação ocorrer, ele irá se manter no final (onde parou) */
+}
+
+#switch button:hover{
+    outline: 8px solid var(--highlight-color);
+    /* Outline: Adiciona uma borda ao redor do elemento, mas não ocupa espaço */
 }
 
 #switch span{
@@ -179,5 +186,27 @@ footer {
     }
     .ligth{
         --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
+}
+
+/* Animações */
+
+@keyframes slide-in {
+    /* onde ele vai começar */
+    from {
+        left: 0;
+    }
+    /* onde ele vai terminar */
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
     }
 }
